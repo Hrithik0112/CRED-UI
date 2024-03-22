@@ -1,5 +1,7 @@
-function App() {
-  return <h1>Welcome to reality</h1>;
-}
+import React from "react";
+
+const App = () => {
+  return <div className="font-Questrial font-extrabold">Welcome to reality</div>;
+};
 
 export default App;
