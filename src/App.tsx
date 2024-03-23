@@ -1,9 +1,11 @@
 import Hero from "./components/Hero";
+import Product from "./components/Product";
 
 const App = () => {
   return (
-    <div className="flex font-Questrial min-h-screen max-w-screen-2xl bg-[#0f0f0f] ">
+    <div className="font-Questrial min-h-screen w-screen bg-[#0f0f0f] ">
       <Hero />
+      <Product />
     </div>
   );
 };
