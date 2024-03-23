@@ -1,6 +1,43 @@
+import { useEffect, useRef, useState } from "react";
+
 const Product = () => {
+  const ref = useRef(null);
+  const [showanimation, setShowanimation] = useState(false);
+
+  function toggleAnimmation(e: any) {
+    if (e[0]?.isIntersecting) {
+      setShowanimation(true);
+    }
+  }
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(toggleAnimmation, options);
+
+    if (!showanimation) {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  });
+
   return (
-    <div className="product w-screen h-[800px] relative overflow-hidden bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png)] bg-cover right-0 top-0 scale-up-bottom">
+    <div
+      className={`product w-screen h-[800px] relative overflow-hidden bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png)] bg-cover right-0 top-0 ${
+        showanimation ? "scale-up-bottom" : ""
+      } `}
+      ref={ref}
+    >
       <div className="wrapper min-h-[70%] ">
         <img
           src="/assets/neopop-left-2.png"
