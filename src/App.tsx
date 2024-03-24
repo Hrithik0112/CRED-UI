@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import MobileScroll from "./components/MobileScroll";
 import Parallax from "./components/Parallax";
 import Product from "./components/Product";
+import Rating from "./components/Rating";
 import Security from "./components/Security";
 import Trust from "./components/Trust";
 
@@ -20,6 +21,7 @@ const App = () => {
       <Parallax />
       <Security />
       <Trust />
+      <Rating />
     </div>
   );
 };
