@@ -1,3 +1,4 @@
+import Experience from "./components/Experience";
 import FeelSpecial from "./components/FeelSpecial";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
@@ -8,6 +9,7 @@ const App = () => {
       <Hero />
       <Product />
       <FeelSpecial />
+      <Experience />
     </div>
   );
 };
