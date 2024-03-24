@@ -44,7 +44,7 @@ const MobileScroll = () => {
         ))}
       </div>
       {/* Mobile mockup */}
-      <div className="w-1/2 flex justify-center ml-[30px] relative">
+      <div className="w-1/2 hidden justify-center ml-[30px] relative sm:flex">
         {/* for destop mockup wrapeer */}
         <div className="sticky top-44 w-[350px] h-[600px] shadow-inner border-2 border-gray-600 rounded-[46px] py-4 px-[14px]">
           <div className="h-full flex justify-center bg-[#0d0d0d] overflow-hidden rounded-[36px]">
