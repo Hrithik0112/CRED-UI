@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Parallax from "./components/Parallax";
 import Product from "./components/Product";
 import Security from "./components/Security";
+import Trust from "./components/Trust";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Experience />
       <Parallax />
       <Security />
+      <Trust />
     </div>
   );
 };
