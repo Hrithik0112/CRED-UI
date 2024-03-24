@@ -51,7 +51,8 @@ const MobileScroll = () => {
             <img
               src={scroll_Data[currentImage].detail_img}
               alt="mockup-screens"
-              className="h-full object-contain"
+              className="h-full object-contain slide-left"
+              key={scroll_Data[currentImage].detail_img}
             />
           </div>
         </div>

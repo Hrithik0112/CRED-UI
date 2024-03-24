@@ -17,3 +17,16 @@
 .scale-up-bottom {
   animation: scale-up-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-left {
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Data } from "../lib/types";
 
 const MobileScrollData = ({
@@ -9,8 +10,41 @@ const MobileScrollData = ({
   i: number;
   setCurrentImage: React.Dispatch<React.SetStateAction<number>>;
 }) => {
+  const ref = useRef(null);
+  const [showanimation, setShowanimation] = useState(false);
+
+  function toggleAnimmation(e: any) {
+    if (e[0]?.isIntersecting) {
+      setShowanimation(true);
+      setCurrentImage(i);
+    }
+  }
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.6,
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(toggleAnimmation, options);
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  });
   return (
-    <div className="mb-[100px] mt-[250px] text-white">
+    <div
+      className={`mb-[100px] mt-[250px] text-white opacity-0 ${
+        showanimation ? "opacity-100 transition-opacity !duration-750" : ""
+      }`}
+      ref={ref}
+    >
       {/* Heading */}
       <div className="text-[105px] leading-[105px] tracking-tight opacity-90 font-black">
         {data.heading}
