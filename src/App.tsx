@@ -2,6 +2,7 @@ import Banner from "./components/Banner";
 import Experience from "./components/Experience";
 import FeelSpecial from "./components/FeelSpecial";
 import Hero from "./components/Hero";
+import MobileScroll from "./components/MobileScroll";
 import Parallax from "./components/Parallax";
 import Product from "./components/Product";
 import Security from "./components/Security";
@@ -15,6 +16,7 @@ const App = () => {
       <FeelSpecial />
       <Banner />
       <Experience />
+      <MobileScroll />
       <Parallax />
       <Security />
       <Trust />
