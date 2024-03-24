@@ -36,7 +36,7 @@ const MobileScroll = () => {
   return (
     <div className="bg-black flex justify-between pt-[240px] pb-[250px] px-[200px] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png)] bg-cover w-screen min-h-screen">
       {/* Scroll Data */}
-      <div>
+      <div className="w-1/2 flex flex-col justify-end">
         {scroll_Data.map((data, index) => (
           <div>
             <MobileScrollData data={data} key={index} i={index} setCurrentImage={setCurrentImage} />
