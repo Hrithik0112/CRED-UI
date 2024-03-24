@@ -1,3 +1,4 @@
+import Banner from "./components/Banner";
 import Experience from "./components/Experience";
 import FeelSpecial from "./components/FeelSpecial";
 import Hero from "./components/Hero";
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Product />
       <FeelSpecial />
+      <Banner />
       <Experience />
       <Security />
     </div>
