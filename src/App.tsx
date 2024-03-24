@@ -2,6 +2,7 @@ import Experience from "./components/Experience";
 import FeelSpecial from "./components/FeelSpecial";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
+import Security from "./components/Security";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Product />
       <FeelSpecial />
       <Experience />
+      <Security />
     </div>
   );
 };
