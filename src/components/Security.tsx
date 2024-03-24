@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const Security = () => {
   return (
-    <div className="bg-[#5a1ecb] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/security-bg.jpg)] bg-cover flex flex-col text-white min-h-screen w-full relative justify-between">
+    <div className="bg-[#5a1ecb] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/security-bg.jpg)] bg-cover flex flex-col text-white min-h-screen w-screen relative justify-between">
       <div className="px-[200px] pt-60 pb-44">
         <div className="section-top">
           <div className="text-[100px] max-w-[630px] font-bold tracking-tight leading-[96px] text-wrap opacity-90">

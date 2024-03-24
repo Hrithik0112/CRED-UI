@@ -3,7 +3,7 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-    <div className="pt-[60px] px-10 pb-[70px] lg:px-[50px] lg:pb-[100px] xl:pb-[200px] xl:px-[200px] flex flex-col w-full ">
+    <div className="pt-[60px] px-10 pb-[70px] lg:px-[50px] lg:pb-[100px] xl:pb-[200px] xl:px-[200px] flex flex-col w-screen ">
       {/* header */}
       <Header />
       {/* hero section */}

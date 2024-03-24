@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const Experience = () => {
   return (
-    <div className="bg-[#1a61e9] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg)] bg-cover flex flex-col text-white min-h-screen w-full relative justify-between">
+    <div className="bg-[#1a61e9] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg)] bg-cover flex flex-col text-white min-h-screen w-screen relative justify-between">
       <div className="px-[200px] pt-60 pb-44">
         <div className="section-top">
           <div className="text-[100px] font-bold tracking-tight leading-[96px] text-wrap opacity-90">
