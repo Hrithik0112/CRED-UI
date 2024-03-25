@@ -1,6 +1,6 @@
 const Trust = () => {
   return (
-    <div className="bg-[#027757] w-screen min-h-screen relative px-[200px] pt-[240px] pb-[250px] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/trust-bg.jpg)] bg-cover bg-right-bottom	  flex justify-between text-white ">
+    <div className="bg-[#027757] w-full min-h-screen relative xl:px-[200px] xl:pt-60 xl:pb-44 md:p-[100px] md:bg-bottom pt-[195px] px-[60px] pb-[90px] sm:bg-center bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/trust-bg-mobile.jpg)] md:bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/trust-bg.jpg)] bg-cover bg-right-bottom	  flex justify-between text-white ">
       {/* left side  */}
       <div className="w-1/2 flex flex-col justify-end">
         <div className="text-6xl leading-[64px] font-black opacity-90 text-wrap max-w-[400px]">

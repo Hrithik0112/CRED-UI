@@ -33,7 +33,7 @@ const Product = () => {
 
   return (
     <div
-      className={`product w-screen h-[800px] relative overflow-hidden bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png)] bg-cover right-0 top-0 ${
+      className={`product w-full h-[450px] sm:h-[580px] md:h-[620px] xl:h-[800px] relative overflow-hidden bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/video-bg.png)] bg-cover right-0 top-0 ${
         showanimation ? "scale-up-bottom" : ""
       } `}
       ref={ref}

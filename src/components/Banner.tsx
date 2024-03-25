@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="w-screen py-[60px] px-[200px] text-[#212426] bg-white">
+    <div className="w-full xl:px-[200px] p-[60px] md:py-[60px] md:px-[100px] text-[#212426] bg-white">
       {/* baneer heading */}
       <div className="flex items-end">
         <div className="text-2xl leading-9 font-extrabold">rewards from brand you love.</div>

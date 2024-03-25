@@ -11,7 +11,7 @@ import Trust from "./components/Trust";
 
 const App = () => {
   return (
-    <div className="font-Questrial min-h-screen max-w-screen-2xl bg-[#0f0f0f] ">
+    <div className="font-Questrial min-h-screen w-full bg-[#0f0f0f] ">
       <Hero />
       <Product />
       <FeelSpecial />

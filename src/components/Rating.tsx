@@ -32,7 +32,7 @@ const items: CarouselItem[] = [
 const Rating = () => {
   return (
     <div className="flex bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png)] bg-cover bg-right-top  relative z-20">
-      <div className="flex flex-col text-white font-black w-screen p-[200px]">
+      <div className="flex flex-col text-white font-black w-full py-[70px] px-10 md:py-[100px] md:px-[60px]  xl:p-[200px]">
         {/* rating section */}
         <div className="flex justify-center">
           {/* app store */}

@@ -34,7 +34,7 @@ export const scroll_Data = [
 const MobileScroll = () => {
   const [currentImage, setCurrentImage] = useState(0);
   return (
-    <div className="bg-black flex justify-between pt-[240px] pb-[250px] px-[200px] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png)] bg-cover w-screen min-h-screen">
+    <div className="bg-black flex justify-between  pt-60 pb-[250px] px-[200px] xl:pt-60 xl:pb-[250px] xl:px-[200px] md:pt-[60px] md:pb-[100px] md:px-[100px] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png)] bg-cover w-full min-h-screen">
       {/* Scroll Data */}
       <div className="w-1/2 flex flex-col justify-end">
         {scroll_Data.map((data, index) => (
