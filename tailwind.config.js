@@ -8,7 +8,7 @@ export default {
         Questrial: ["Questrial"],
       },
       screens: {
-        sm: "425px",
+        sm: "480px",
       },
     },
   },
