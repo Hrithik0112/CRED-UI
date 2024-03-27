@@ -100,6 +100,16 @@ const Rating = () => {
         <div className="flex overflow-hidden md:mt-[60px] mx-auto h-[270px] sm:h-[200px]  w-full mt-5 xl:w-[900px] ">
           <Carousel items={items} />
         </div>
+        {/* Footer */}
+        <div className="text-3xl text-center flex justify-center items-center mt-10">
+          Made With ❤️ By
+          <a
+            href="https://hrithik-portfolio-one.vercel.app/"
+            className="font-black text-slate-300 hover:text-white ml-2"
+          >
+            @Hrithik
+          </a>
+        </div>
       </div>
     </div>
   );
