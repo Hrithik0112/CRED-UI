@@ -1,13 +1,15 @@
 function Header() {
   return (
     <div className="flex justify-between items-center">
-      <img
-        src="/assets/cred-logo.png"
-        alt="logo"
-        width={40}
-        height={53}
-        className="md: w-[50px] h-[66px]"
-      />
+      <div className="flex justify-center items-center">
+        <img
+          src="/assets/cred-logo.png"
+          alt="logo"
+          width={40}
+          height={53}
+          className="xl:w-[50px] xl:h-[66px]"
+        />
+      </div>
       <button className="w-8 h-8 flex flex-col md:hidden space-y-1 items-end">
         <div className="w-8 h-1 bg-gray-400"></div>
         <div className="w-7 h-1 bg-gray-400"></div>

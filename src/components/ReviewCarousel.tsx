@@ -26,14 +26,17 @@ export const Carousel: React.FC<{ items: CarouselItem[] }> = ({ items }) => {
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
           {items.map((item) => (
-            <div key={item.id} className="w-full flex-shrink-0 p-4 font-normal">
-              <p className="text-lg pb-8 text-center">{item.review}</p>
-              <p className="text-lg text-center">{item.author}</p>
+            <div
+              key={item.id}
+              className="max-w-full min-w-full flex-shrink-0 md:p-4 font-normal p-0 text-left md:text-center text-wrap"
+            >
+              <p className="text-lg md:pb-8 pb-7">{item.review}</p>
+              <p className="text-lg ">{item.author}</p>
             </div>
           ))}
         </div>
       </div>
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 z-10 flex space-x-2">
+      <div className="absolute bottom-2 left-1/2 transform-translate-x-1/2 z-10 flex space-x-2">
         {items.map((_, index) => (
           <button
             key={index}

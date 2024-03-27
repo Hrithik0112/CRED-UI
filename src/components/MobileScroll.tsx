@@ -34,9 +34,9 @@ export const scroll_Data = [
 const MobileScroll = () => {
   const [currentImage, setCurrentImage] = useState(0);
   return (
-    <div className="bg-black flex justify-between  pt-60 pb-[250px] px-[200px] xl:pt-60 xl:pb-[250px] xl:px-[200px] md:pt-[60px] md:pb-[100px] md:px-[100px] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png)] bg-cover w-full min-h-screen">
+    <div className="bg-black flex flex-col md:flex-row justify-between py-[70px] px-10  sm:p-[60px]  xl:pt-60 xl:pb-[250px] xl:px-[200px] md:pt-[60px] md:pb-[100px] md:px-[100px] bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg-mobile.png)] md:bg-[url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png)] bg-cover w-full min-h-screen">
       {/* Scroll Data */}
-      <div className="w-1/2 flex flex-col justify-end">
+      <div className="md:w-1/2 w-full flex flex-col  justify-end">
         {scroll_Data.map((data, index) => (
           <div>
             <MobileScrollData data={data} key={index} i={index} setCurrentImage={setCurrentImage} />
@@ -44,9 +44,9 @@ const MobileScroll = () => {
         ))}
       </div>
       {/* Mobile mockup */}
-      <div className="w-1/2 hidden justify-center ml-[30px] relative sm:flex">
+      <div className="w-1/2 hidden justify-center ml-[30px] relative md:flex">
         {/* for destop mockup wrapeer */}
-        <div className="sticky top-44 w-[350px] h-[600px] shadow-inner border-2 border-gray-600 rounded-[46px] py-4 px-[14px]">
+        <div className="sticky top-44 xl:w-[350px] xl:h-[600px] md:w-[272px] md:h-[480px] shadow-inner border-2 border-gray-600 rounded-[46px] py-4 px-[14px]">
           <div className="h-full flex justify-center bg-[#0d0d0d] overflow-hidden rounded-[36px]">
             <img
               src={scroll_Data[currentImage].detail_img}
